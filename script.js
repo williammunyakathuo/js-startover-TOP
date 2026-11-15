@@ -16,3 +16,38 @@ const actual = max - 13;
 
 const percentage = actual/max;
 
+// functions
+
+function favAnimal(animal) {
+    return(animal + "is my favorite animal")
+}
+
+const message = favAnimal('goat')
+console.log(message)
+
+
+
+function showPrimes(n) {
+  nextPrime: for (let i = 2; i < n; i++) {
+
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
+
+    alert( i ); // a prime
+  }
+}
+
+
+function draw() {
+  ctx.clearRect(0, 0, WIDTH, HEIGHT);
+  for (let i = 0; i < 100; i++) {
+    ctx.beginPath();
+    ctx.fillStyle = "rgb(255 0 0 / 50%)";
+    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+    ctx.fill();
+  }
+}
+
+
+draw()
