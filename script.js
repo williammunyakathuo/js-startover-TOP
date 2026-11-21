@@ -1,4 +1,4 @@
-const pi = 3.16
+/*const pi = 3.16
 
 console.log(pi)
 
@@ -47,7 +47,38 @@ function draw() {
     ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
     ctx.fill();
   }
+}*/
+
+
+
+function addSeven(number){
+    return number + 7
 }
 
+console.log(addSeven(10))
 
-draw()
+function multiplyTwo(a, b){
+    return a*b
+}
+
+console.log(multiplyTwo(17,18))
+
+function capitalize (words){
+    return words.charAt(0).toUpperCase() + words.slice(1).toLowerCase()
+}
+
+console.log(capitalize('abcd'))
+console.log(capitalize('ABCD'))
+console.log(capitalize('aBCd'))
+
+function lastLetter(last) {
+    return last.slice(-1);
+}
+
+console.log(lastLetter("abcd"));
+
+// arrays 
+
+let fruits = ['apple', 'orange', 'banana']
+
+console.log(fruits[0])
