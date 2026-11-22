@@ -82,3 +82,46 @@ console.log(lastLetter("abcd"));
 let fruits = ['apple', 'orange', 'banana']
 
 console.log(fruits[0])
+
+fruits[3]='melon'
+
+fruits[2]= 'peach'
+
+console.log(fruits)
+
+console.log(fruits.at(-2))
+
+for (let fruits of fruits){
+  console.log(fruits)
+}
+
+
+function sumOfTripledEvens(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      const tripleEvenNumber = array[i] * 3;
+
+      sum += tripleEvenNumber;
+    }
+  }
+  return sum;
+}
+
+
+function addOne(num) {
+  return num + 1;
+}
+const arr = [1, 2, 3, 4, 5];
+const mappedArr = arr.map(addOne);
+console.log(mappedArr); 
+
+function isOdd(num) {
+  return num % 2 !== 0;
+}
+const arr2 = [1, 2, 3, 4, 5];
+const oddNums = arr.filter(isOdd);
+console.log(oddNums); 
+console.log(arr);
+
+
