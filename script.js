@@ -91,8 +91,8 @@ console.log(fruits)
 
 console.log(fruits.at(-2))
 
-for (let fruits of fruits){
-  console.log(fruits)
+for (let fruit of fruits){
+  console.log(fruit)
 }
 
 
@@ -123,5 +123,14 @@ const arr2 = [1, 2, 3, 4, 5];
 const oddNums = arr.filter(isOdd);
 console.log(oddNums); 
 console.log(arr);
+
+const container = document.querySelector("#container");
+
+const display = container.firstElementChild;
+console.log(display);
+
+const controls = document.querySelector(".controls");
+const display2 = controls.previousElementSibling;
+console.log(display);
 
 
