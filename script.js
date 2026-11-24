@@ -134,3 +134,19 @@ const display2 = controls.previousElementSibling;
 console.log(display);
 
 
+const first = document.querySelector("div");
+
+console.log(first)
+
+const all = document.querySelectorAll("divs")
+
+console.log(all)
+
+const div = document.createElement("div");
+
+div.style.color = "blue";
+div.setAttribute("style", "color: blue; background: white; height: 100px; width: 100px; border: 1px solid black;");
+
+div.style.backgroundColor = "red";
+
+div.textContent = "Hello World!"
